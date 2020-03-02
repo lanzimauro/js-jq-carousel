@@ -44,3 +44,20 @@
     color: grey;
     transform: scale(1.35);
 }
+
+.slider-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+}
+
+.slider-nav i:hover {
+    color: gray;
+    transform: scale(1.35);
+    cursor: pointer;
+}
+
+.slider-nav i.active {
+    color: gray;
+}
