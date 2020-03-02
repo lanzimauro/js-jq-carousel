@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+}
+
+.images {
+    width: 500px;
+    height: calc(500px / 16 * 9);
+}
+
+.images img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.images img.active {
+    display: block;
+}
+
+.prev i,
+.next i {
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+.prev i:hover,
+.next i:hover {
+    cursor: pointer;
+    color: grey;
+    transform: scale(1.35);
+}
